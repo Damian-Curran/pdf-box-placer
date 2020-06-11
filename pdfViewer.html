@@ -1,0 +1,51 @@
+<html>
+    <title></title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./resizer.css">
+    </head>
+
+    <body>
+        <input id="pdfFile" type="File"></inpute>
+
+        <div class="top-bar">
+            <button class="btn" id="prev-page">
+                <i class="fas fa-arrow-circle-left"></i> Prev Page
+            </button>
+            <button class="btn" id="next-page">
+                Next Page <i class="fas fa-arrow-circle-right"></i>
+            </button>
+            <span class="page-info">
+                Page <span id="page-num"></span> of <span id="page-count"></span>
+            </span>
+        </div>
+
+        <canvas class="pdfView" id="canvas"></canvas>
+        
+        <div class='resizable' id="mydiv">
+            <div class='resizers'>
+                <div class='resizer bottom-right' id="myResizer"></div>
+                <div class='resizer top-left' id="mydivDrag"></div>
+            </div>
+        </div>
+
+        <button class="btn" id="coords">
+            (X,Y) <i class="fas fa-arrow-circle-right"></i>
+        </button>
+
+        <script type="text/javascript" src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+        <script type="text/javascript" src="./pdfWorker.js"></script>
+        <script type="text/javascript" src="./main.js"></script>
+        <script type="text/javascript" src="./resizable.js"></script>
+        <script type="text/javascript" src="./draggableRect.js"></script>
+        <script type="text/javascript" src="./pageElementsVisibility.js"></script>
+    </body>
+</html>

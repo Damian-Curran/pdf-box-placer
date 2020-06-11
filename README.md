@@ -2,7 +2,7 @@
 Uses PDF.js to load a pdf and uses css to draw a box which provides (x,y) co-ordinates and the page number
 
 
-# TO-DO's and implementation ideas
+# To-Do's and implementation ideas
 
 ## multiple x,y coords for boxes on PDF
 - onClick add coords to list (append)

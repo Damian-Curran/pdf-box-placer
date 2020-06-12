@@ -12,6 +12,9 @@ Uses PDF.js to load a pdf and uses css to draw a box which provides (x,y) co-ord
 - change css by script (.resizeable) {width,height,left,top} {width,height,x,y}
 - change size of clickable drag and resizer by (.resizable .resizers .resizer) {width=0,height=0}
 
+### checkbox to show all boxs on current page
+- filter saved boxs by current page and draw without draggable or resizeable corners
+
 ### delete box if wanted
 - delete object from list
 
